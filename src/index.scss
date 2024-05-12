@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  text-decoration: none;
+}
+body {
+  .title-main {
+    font-family: HannaFont;
+  }
+}
+//FONTS//
+@font-face {
+  font-family: HannaFont;
+  src: url("../src/assets/fonts/hannaName.ttf");
+}
+@font-face {
+  font-family: midHeader;
+  src: url("../src/assets/fonts/Sansita-Regular.ttf");
+}
+
+.app-principal-container {
+  background-image: url("../src/assets/beige.jpg");
+  background-size: contain;
+  width: 100%;
+  background-repeat: repeat;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: max-content;
+
+  .center-container {
+    width: 90%;
+    margin: 40px 0;
+    min-height: 670px;
+
+    border: 5px solid rgb(186, 186, 144);
+    border-radius: 10px;
+    background-color: #fff;
+  }
+
+  .whatsapp-button-container {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    z-index: 10;
+    bottom: 15px;
+    right: 20px;
+
+    .text {
+      width: 0px;
+      height: 0;
+      z-index: 1;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .Logo {
+      width: 60px;
+      height: 60px;
+    }
+
+    @keyframes toLeft {
+      from {
+        width: 0px;
+        height: 40px;
+      }
+
+      to {
+        width: 220px;
+        height: 40px;
+      }
+    }
+
+    &:hover {
+      .text {
+        font-family: midHeader;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(103, 103, 61);
+        padding: 3px 10px;
+        z-index: -1;
+        right: 30px;
+        top: 5px;
+        background-color: rgb(203, 203, 162);
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        animation: toLeft 0.5s forwards;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .app-principal-container {
+    .whatsapp-button-container {
+      width: 80px;
+      height: 80px;
+      bottom: 20px;
+      right: 50px;
+
+      .text {
+        width: 0px;
+        height: 0;
+        z-index: 1;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
+      .Logo {
+        width: 70px;
+        height: 70px;
+      }
+
+      @keyframes toLeft {
+        from {
+          width: 0px;
+          height: 40px;
+        }
+
+        to {
+          width: 300px;
+          height: 40px;
+        }
+      }
+
+      &:hover {
+        .text {
+          font-family: midHeader;
+          display: block;
+          text-align: start;
+          color: rgb(103, 103, 61);
+          padding: 5px 0 5px 20px;
+          z-index: -1;
+          right: 30px;
+          font-size: 20px;
+          top: 15px;
+          background-color: rgb(203, 203, 162);
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
+          animation: toLeft 0.5s forwards;
+        }
+      }
+    }
+  }
+}

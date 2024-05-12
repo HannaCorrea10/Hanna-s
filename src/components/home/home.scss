@@ -1,0 +1,198 @@
+.home-principal-container {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  margin: 30px 0 30px 0;
+  padding: 30px 0 40px 0;
+  .category-container {
+    background-color: rgb(186, 186, 144);
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10px 0;
+    border-radius: 10px;
+    cursor: pointer;
+
+    .velo {
+      transition: 0.3s;
+      width: 93%;
+      height: 250px;
+      position: absolute;
+      background-color: transparent;
+    }
+    .pick-image {
+      width: 93%;
+      margin: auto;
+      height: 250px;
+    }
+    .name-category-container {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      bottom: -15px;
+      background-color: rgb(245, 245, 235);
+      border-radius: 5px;
+      padding: 5px;
+      transition: 0.3s;
+      z-index: 1;
+
+      .name {
+        font-family: midHeader;
+        color: rgb(103, 103, 61);
+        font-size: 20px;
+        padding: 2px 12px;
+        border: 2px solid rgb(103, 103, 61);
+      }
+    }
+
+    &:hover {
+      .velo {
+        width: 93%;
+        height: 250px;
+        position: absolute;
+        background-color: rgba(247, 247, 219, 0.45);
+      }
+
+      .name-category-container {
+        bottom: 50%;
+      }
+    }
+
+    .description {
+      font-family: midHeader;
+      font-size: 17px;
+      color: rgb(78, 78, 45);
+      position: absolute;
+      bottom: -40px;
+      width: 100%;
+      padding: 20px 10px 5px 10px;
+      text-align: center;
+      background-color: rgb(186, 186, 144);
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  }
+
+  .category-container-freestyle {
+    background-color: rgb(239, 126, 239);
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10px 0;
+    border-radius: 10px;
+    cursor: pointer;
+
+    .velo {
+      transition: 0.3s;
+      width: 93%;
+      height: 250px;
+      position: absolute;
+      background-color: transparent;
+    }
+    .pick-image {
+      width: 93%;
+      margin: auto;
+      height: 250px;
+    }
+    .name-category-container {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      bottom: 10px;
+      background-color: rgb(41, 41, 38);
+      border-radius: 5px;
+      padding: 5px;
+      transition: 0.3s;
+      z-index: 1;
+
+      .name {
+        font-family: midHeader;
+        color: rgb(239, 108, 239);
+        font-size: 20px;
+        padding: 2px 12px;
+        letter-spacing: 5px;
+        border: 2px solid purple;
+        -webkit-text-stroke-width: 0.5px;
+        -webkit-text-stroke-color: #e5a9e7;
+        text-shadow: 0 0 8px rgb(225, 46, 225);
+      }
+    }
+
+    .description {
+      font-family: midHeader;
+      font-size: 17px;
+      color: rgb(98, 22, 98);
+      position: absolute;
+      bottom: -40px;
+      width: 100%;
+      padding: 20px 0 5px 0;
+      text-align: center;
+      background-color: rgb(239, 126, 239);
+
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+
+    &:hover {
+      .velo {
+        width: 93%;
+        height: 250px;
+        position: absolute;
+        background-image: url("../../assets/confeti.png");
+        background-size: contain;
+        background-color: rgba(83, 66, 83, 0.571);
+      }
+
+      .name-category-container {
+        bottom: 50%;
+
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(245, 245, 235);
+        border-radius: 5px;
+        padding: 5px;
+        transition: 0.3s;
+
+        .name {
+          font-family: midHeader;
+          color: rgb(103, 103, 61);
+          font-size: 20px;
+          padding: 2px 12px;
+          border: 2px solid rgb(103, 103, 61);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-principal-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    .category-container {
+      width: 30%;
+      max-width: 250px;
+      margin: 0;
+    }
+
+    .category-container-freestyle {
+      width: 30%;
+      margin: 0;
+      max-width: 250px;
+    }
+  }
+}

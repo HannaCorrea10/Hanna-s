@@ -1,0 +1,56 @@
+.contact-principal-container {
+  .title {
+    font-family: midHeader;
+    margin: 20px auto;
+    width: 90%;
+    text-align: center;
+    padding: 20px 0 10px 0;
+    font-size: 20px;
+    border-top: 2px solid rgb(186, 186, 144);
+    color: rgb(103, 103, 61);
+  }
+
+  .contact-sections-container {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    .contact-item {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      // justify-content: center;
+      gap: 5px;
+      padding: 5px 5px 5px 20px;
+      font-size: 17px;
+      i {
+        font-size: 19px;
+        color: rgb(103, 103, 61);
+      }
+      .name-media {
+        color: rgb(103, 103, 61);
+        font-family: midHeader;
+      }
+
+      .info {
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact-principal-container {
+    .title {
+      font-size: 22px;
+    }
+    .contact-sections-container {
+      width: 50%;
+      .contact-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
