@@ -279,8 +279,8 @@ const CategoryPage = () => {
             key={index}
             className="picture-content"
           >
-            <img className="marco" src={polaroidMarc} alt="" />
-            <img className="photo" src={picture} alt="" />
+            <img className="marco" src={polaroidMarc} alt="description" />
+            <img className="photo" src={picture} alt="description" />
           </div>
         ))}
       </section>
@@ -291,7 +291,7 @@ const CategoryPage = () => {
               <i className="fa-solid fa-xmark"></i>
             </button>
             <img
-              alt="/image"
+              alt="image"
               className="picture"
               src={PicturesToMap[selectedImageIndex]}
             />

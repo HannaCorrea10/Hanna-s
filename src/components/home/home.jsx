@@ -21,7 +21,7 @@ const Home = () => {
       {categoriesData.map((category) => (
         <Link to={`/${category.name}`} className="category-container">
           <div className="velo"></div>
-          <img className="pick-image" src={category.photo} alt="" />
+          <img className="pick-image" src={category.photo} alt="description" />
           <div className="name-category-container">
             <p className="name">{category.name}</p>
           </div>
@@ -32,7 +32,7 @@ const Home = () => {
       ))}
       <Link to={"/TENDENCIAS"} className="category-container-freestyle">
         <div className="velo"></div>
-        <img className="pick-image" src={freestylePic} alt="" />
+        <img className="pick-image" src={freestylePic} alt="description" />
         <div className="name-category-container">
           <p className="name">TENDENCIAS</p>
         </div>

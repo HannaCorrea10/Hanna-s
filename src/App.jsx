@@ -37,7 +37,7 @@ function App() {
         rel="noopener noreferrer"
       >
         <p className="text">¡Quiero mas información!</p>
-        <img className="Logo" src={logoWp} alt="" />
+        <img className="Logo" src={logoWp} alt="description" />
       </a>
     </div>
   );
