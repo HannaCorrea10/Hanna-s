@@ -290,7 +290,11 @@ const CategoryPage = () => {
             <button className="close-button" onClick={closeFullscreen}>
               <i className="fa-solid fa-xmark"></i>
             </button>
-            <img className="picture" src={PicturesToMap[selectedImageIndex]} />
+            <img
+              alt="/image"
+              className="picture"
+              src={PicturesToMap[selectedImageIndex]}
+            />
             <div className="buttons-container">
               <button onClick={prevImage}>
                 <i class="fa-solid fa-angle-left"></i>
