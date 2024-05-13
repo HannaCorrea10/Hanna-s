@@ -36,9 +36,7 @@ const Home = () => {
         <div className="name-category-container">
           <p className="name">TENDENCIAS</p>
         </div>
-        <p className="description">
-          Festival,glitter, festival,fiestas,eventos,étc.
-        </p>
+        <p className="description">Festival,glitter,fiestas,eventos,étc.</p>
       </Link>
     </section>
   );

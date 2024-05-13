@@ -263,6 +263,10 @@ const CategoryPage = () => {
   };
   return (
     <section className="category-page-principal">
+      <p className="showme">
+        <p>¿Quieres brillar en ese día especial?</p>
+        <p>¡Toda tu familia lista desde casa¡</p>
+      </p>
       <div
         className={`${
           params.categoryName === "TENDENCIAS"
@@ -272,7 +276,6 @@ const CategoryPage = () => {
       >
         <h3 className="name">{params.categoryName}</h3>
       </div>
-      <p className="showme">¡Muéstrame que te gustaría!</p>
       <section className="pictures-main-container">
         {PicturesToMap.map((picture, index) => (
           <div

@@ -48,10 +48,15 @@
     }
   }
   .showme {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    font-family: midHeader;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    font-family: Opensise;
+
+    gap: 0;
   }
 
   .pictures-main-container {
@@ -190,8 +195,10 @@
     }
 
     .showme {
-      font-size: 22px;
-      margin: 40px auto;
+      flex-direction: row;
+      font-size: 20px;
+      margin: 20px auto;
+      gap: 10px;
     }
     .pictures-main-container {
       width: 90%;

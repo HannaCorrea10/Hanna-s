@@ -13,7 +13,8 @@ const Header = () => {
       <Link to={"/"} className={`logo-container ${isZoom ? "isZoom" : ""}`}>
         <h1 className="logoName">Hanna's</h1>
       </Link>
-      <div className="log-deco"></div>
+      <p className="info-shop">Peluquería a domicilio en Palma y alrededores</p>
+
       <nav className="nav-container">
         <Link to={"/TARIFAS"} className="item-button">
           TARIFAS

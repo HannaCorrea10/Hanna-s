@@ -36,17 +36,16 @@
     transform: scale(1.04);
   }
 
-  .log-deco {
-    width: 50%;
-    height: 50px;
-    min-width: 240px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-image: url("../../assets/hh.jpg");
+  .info-shop {
+    width: 90%;
+    text-align: center;
+    font-family: Cursivelitle;
+
+    color: #67673d;
+    margin: 19px auto 0 auto;
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: lighter;
   }
 
   .nav-container {
@@ -65,7 +64,8 @@
       font-family: midHeader;
       cursor: pointer;
       text-align: center;
-      font-size: 20px;
+      font-size: 18px;
+      letter-spacing: 3px;
       background-color: transparent;
       color: rgb(203, 203, 128);
       border-bottom: 3px solid rgb(203, 203, 128);
@@ -101,15 +101,14 @@
       }
     }
 
-    .isZoom {
-      transform: scale(1.1);
+    .info-shop {
+      width: 50%;
+      font-size: 28px;
+      margin-top: 70px;
     }
 
-    .log-deco {
-      width: 0%;
-      margin-top: 30px;
-
-      min-width: 350px;
+    .isZoom {
+      transform: scale(1.1);
     }
 
     .nav-container {

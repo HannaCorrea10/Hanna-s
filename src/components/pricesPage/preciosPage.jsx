@@ -24,7 +24,6 @@ const PreciosPage = () => {
         </div>
       </div>
       <p className="info-prices">
-        <p>* DOMICILIO INCLUIDO *</p>
         LOS PRECIOS PUEDEN VARIAR SEGÚN TIEMPO Ó MATERIALES UTILIZADOS
         (GLITTER,DECORACIÓN,ACCESORIOS,ÉTC.)
       </p>
