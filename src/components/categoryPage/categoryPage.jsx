@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import { useParams } from "react-router-dom";
 import "./categoryPage.scss";
 import I1 from "../../assets/IntantilPictures/a.jpg";
